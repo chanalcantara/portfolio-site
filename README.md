@@ -50,22 +50,26 @@ Place your CV as a PDF at:
 files/CV-Christian-Alcantara.pdf
 ```
 
-This matches the download link already wired up in `cv.html`. If you use a different
-filename, update the `href` in `cv.html` accordingly.
+This matches the download link already wired up in `cv.html`. A converted PDF is already
+included, generated from the CV document you provided — regenerate it (or drop in a new
+export from Word) whenever you update the underlying CV.
 
-## 4. Add a real photo (optional)
+## 4. Add a real photo
 
-The homepage currently shows a circular initials avatar (`CA`) instead of a photo. To use
-a real photo:
+The homepage currently shows a circular initials avatar (`CA`) instead of a photo. A
+non-circular portrait style (`.avatar-photo`, a rounded-rectangle headshot crop) is already
+defined in `assets/css/style.css` — a closer fit for a formal academic photo than a circle.
 
-1. Add your image to `assets/img/` (e.g. `assets/img/profile.jpg`).
+To use it:
+
+1. Add your photo to `assets/img/profile.jpg`.
 2. In `index.html`, replace:
    ```html
    <div class="avatar">CA</div>
    ```
    with:
    ```html
-   <img class="avatar" src="assets/img/profile.jpg" alt="Christian Arnel R. Alcantara" style="object-fit:cover;">
+   <img class="avatar-photo" src="assets/img/profile.jpg" alt="Christian Arnel R. Alcantara">
    ```
 
 ## 5. Customize colors / fonts (optional)
