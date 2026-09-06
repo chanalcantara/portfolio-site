@@ -54,23 +54,12 @@ This matches the download link already wired up in `cv.html`. A converted PDF is
 included, generated from the CV document you provided — regenerate it (or drop in a new
 export from Word) whenever you update the underlying CV.
 
-## 4. Add a real photo
+## 4. Replacing the photo
 
-The homepage currently shows a circular initials avatar (`CA`) instead of a photo. A
-non-circular portrait style (`.avatar-photo`, a rounded-rectangle headshot crop) is already
-defined in `assets/css/style.css` — a closer fit for a formal academic photo than a circle.
-
-To use it:
-
-1. Add your photo to `assets/img/profile.jpg`.
-2. In `index.html`, replace:
-   ```html
-   <div class="avatar">CA</div>
-   ```
-   with:
-   ```html
-   <img class="avatar-photo" src="assets/img/profile.jpg" alt="Christian Arnel R. Alcantara">
-   ```
+The homepage headshot lives at `assets/img/profile.jpg` and uses the `.avatar-photo` style in
+`assets/css/style.css` — a non-circular, rounded-rectangle portrait crop, a closer fit for a
+formal academic photo than a circle. To swap it for a different photo, just replace that file
+with a new image of the same name (or update the `src` in `index.html` if you rename it).
 
 ## 5. Customize colors / fonts (optional)
 
